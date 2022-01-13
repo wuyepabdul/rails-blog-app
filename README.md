@@ -1,24 +1,56 @@
-# README
+# Rails Blog App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> This project is a blog application built with Ruby on Rails
 
-Things you may want to cover:
+## Built With
 
-* Ruby version
+- Ruby
+- Ruby on Rails
 
-* System dependencies
+## Getting Started
 
-* Configuration
+```
+git clone https://github.com/wuyepabdul/rails-blog-app
+cd rails-blog-app
+bundle install
+rails s
+```
 
-* Database creation
+## Tests
+```
+git clone https://github.com/wuyepabdul/rails-blog-app
+cd rails-blog-app
+bundle install
+gem install rspec
+rspec
+```
 
-* Database initialization
+## Authors
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+👤 **Abdul Wuyep**
 
-* Deployment instructions
+- GitHub: [@wuyepabdul](https://github.com/wuyepabdul)
+- Twitter: [@AbdulWuyep](https://twitter.com/AbdulWuyep)
+- LinkedIn: [Abdul Wuyep](https://www.linkedin.com/in/abdul-wuyep/)
 
-* ...
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
