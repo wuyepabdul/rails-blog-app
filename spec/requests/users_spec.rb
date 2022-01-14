@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Users", type: :request do
+RSpec.describe "Users Controllers", type: :request do
   describe "GET /index" do
     it "Should list all users" do
       get users_path
