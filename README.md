@@ -22,7 +22,7 @@ git clone https://github.com/wuyepabdul/rails-blog-app
 cd rails-blog-app
 bundle install
 gem install rspec
-rspec
+bundle exec rspec
 ```
 
 ## Authors
