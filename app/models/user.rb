@@ -7,7 +7,5 @@ class User < ApplicationRecord
     posts.last(3)
   end
 
-  def increment_posts_counter
-    user.posts_counter += 1
-  end
+
 end
