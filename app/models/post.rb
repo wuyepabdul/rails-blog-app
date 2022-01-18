@@ -10,8 +10,4 @@ class Post < ApplicationRecord
   def increment_likes_counter
     posts.likes_counter += 1
   end
-
-  def increment_comments_counter
-    posts.comments_counter += 1
-  end
 end
