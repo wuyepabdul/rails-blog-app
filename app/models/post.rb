@@ -7,7 +7,5 @@ class Post < ApplicationRecord
     comments.last(5)
   end
 
-  def increment_likes_counter
-    posts.likes_counter += 1
-  end
+  
 end
