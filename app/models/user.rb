@@ -6,4 +6,8 @@ class User < ApplicationRecord
     def most_recent_posts
         posts.last(3)
     end
+
+    def increment_posts_counter
+        user.posts_counter += 1
+    end
 end
