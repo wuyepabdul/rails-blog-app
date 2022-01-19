@@ -14,8 +14,7 @@ body {
 
 .container {
     width: 80%;
-    margin: auto;
-    background-color: rgb(187, 198, 231);
+    margin: 30px auto;
 }
 
 .card {
@@ -55,20 +54,26 @@ body {
 
 .bio-div {
     width: 100%;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 .post-wrapper {
     margin: 20px auto;
-    background-color: rgb(128, 127, 127);
     border: 1px solid rgb(128, 127, 127);
 }
 
 .post-div {
     width: 100%;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
 
 .post-wrapper .comments-likes {
     text-align: right;
+}
+
+.see-all-posts {
+    display: block;
+    padding: 10px 20px;
+    width: 200px;
+    margin: 0 auto;
 }

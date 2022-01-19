@@ -20,6 +20,5 @@ class UsersController < ApplicationController
     result_arr = @posts.select{|i| i['id'] == params[:id]}
     print 'params =>'
     @user_info = result_arr.reduce({}, :merge) 
-    puts @user_info.is_a? Hash
   end
 end
