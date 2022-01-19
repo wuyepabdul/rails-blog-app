@@ -18,7 +18,6 @@ class UsersController < ApplicationController
       {'id' => '5', 'username' => 'brock lesnar', 'number_of_posts' => '5'}
     ]
     result_arr = @posts.select{|i| i['id'] == params[:id]}
-    print 'params =>'
     @user_info = result_arr.reduce({}, :merge) 
   end
 end

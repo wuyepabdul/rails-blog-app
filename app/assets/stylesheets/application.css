@@ -71,7 +71,7 @@ body {
     text-align: right;
 }
 
-.see-all-posts {
+.see-all-posts, .pagination {
     display: block;
     padding: 10px 20px;
     width: 200px;
