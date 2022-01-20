@@ -1,28 +1,18 @@
 class UsersController < ApplicationController
   def index
-    @users = [
-      { 'id' => '1', 'username' => 'peter druid', 'number_of_posts' => '3' },
-      { 'id' => '2', 'username' => 'david armstrong', 'number_of_posts' => '1' }
-    ]
+    @users = User.all
+
+    puts 'user_info'
+    puts @users
+
   end
 
   def show
-    @users = [
-      { 'id' => '1', 'username' => 'peter druid', 'number_of_posts' => '3' },
-      { 'id' => '2', 'username' => 'david armstrong', 'number_of_posts' => '1' }
-    ]
-    matched_user = @users.select { |i| i['id'] == params[:id] }
-    @user_info = matched_user.reduce({}, :merge)
+    users = User.all
+    @user_info = users.find(params[:user_id])
 
-    @posts = [
-      { 'id' => '1',
-        'title' => 'First Post',
-        'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure , ...' },
-      { 'id' => '2',
-        'title' => 'Second Post',
-        'description' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure , ...' }
-    ]
-    result_arr = @posts.select { |i| i['id'] == params[:user_id] }
-    @post_info = result_arr.reduce({}, :merge)
+    posts = Post.all
+    @post_info = posts.find()
+
   end
 end
