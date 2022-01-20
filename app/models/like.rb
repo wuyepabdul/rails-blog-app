@@ -1,6 +1,6 @@
 class Like < ApplicationRecord
-  belongs_to :user
-  belongs_to :post
+  belongs_to :user, optional: true 
+  belongs_to :post, optional: true 
 
   def increment_likes_counter
     posts.likes_counter += 1

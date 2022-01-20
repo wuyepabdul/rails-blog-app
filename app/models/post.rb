@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  belongs_to :user
+  belongs_to :user, optional: true 
   has_many :likes, through: :posts
   has_many :comments, through: :posts
 
