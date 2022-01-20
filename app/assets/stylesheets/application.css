@@ -8,6 +8,11 @@ body {
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .d-flex {
   display: flex;
 }
@@ -58,7 +63,9 @@ body {
 }
 
 .post-wrapper {
-    margin: 20px auto;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 5px;
     border: 1px solid rgb(128, 127, 127);
 }
 
@@ -76,4 +83,10 @@ body {
     padding: 10px 20px;
     width: 200px;
     margin: 0 auto;
+    margin-top: 20px;
+}
+
+.comment-wrapper {
+    border: 1px solid rgb(128, 127, 127);
+    padding: 10px 10px;
 }

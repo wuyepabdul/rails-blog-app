@@ -10,37 +10,41 @@
         </div>
     </div>
 
-    <div class='post-comment-wrapper'>
-      <div class='post-wrapper'>
-        <div class='post-div'>
-            <h4>Post #1 </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
-            </p>
-            <p class='comments-likes'>
-                <small>Comments:x, Likes:y </small>
-            </p>
+    <%= link_to(user_post_path(@user_info['id'], '1')) do %>
+        <div class='post-comment-wrapper'>
+           <div class='post-wrapper'>
+                <div class='post-div'>
+                    <h4>Post #1 </h4>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
+                    </p>
+                    <p class='comments-likes'>
+                        <small>Comments:x, Likes:y </small>
+                    </p>
+                </div>
+            </div>
+                <div class='comment-wrapper'>
+                <p> Username: Comment 1 </p>
+                <p> Username: Comment 2 </p>
+                <p> Username: Comment 3 </p>
+                <p> Username: Comment 4 </p>
+            </div>
         </div>
-        <div class='comment-wrapper'>
-            <p> Username: Comment 1 </p>
-            <p> Username: Comment 2 </p>
-            <p> Username: Comment 3 </p>
-            <p> Username: Comment 4 </p>
-        </div>
-    </div>
+    <% end %>
 
     <div class='post-comment-wrapper'>
-      <div class='post-wrapper'>
-        <div class='post-div'>
-            <h4>Post #1 </h4>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
-            </p>
-            <p class='comments-likes'>
-                <small>Comments:x, Likes:y </small>
-            </p>
+        <div class='post-wrapper'>
+            <div class='post-div'>
+                <h4>Post #2 </h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
+                </p>
+                <p class='comments-likes'>
+                    <small>Comments:x, Likes:y </small>
+                </p>
+            </div>
         </div>
-        <div class='comment-wrapper'>
+            <div class='comment-wrapper'>
             <p> Username: Comment 1 </p>
             <p> Username: Comment 2 </p>
             <p> Username: Comment 3 </p>
