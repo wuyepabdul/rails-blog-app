@@ -3,26 +3,15 @@ class PostsController < ApplicationController
     users = User.all
     @user_info = users.find { |i| i['id'] == params[:user_id] }
 
-    puts 'user_info'
-    puts @user_info
-
     posts = Post.all
-    @post_info = posts.find { |i| i['id'] == params[:id] }
-
-    puts 'post_info'
-    puts @post_info
+    # @post_info = posts.find { |i| i['id'] == params[:id] }
   end
 
   def show
     users = User.all
     @user_info = users.find { |i| i['id'] == params[:user_id] }
-    puts 'user_info'
-    puts @user_info
 
     posts = Post.all
     @post_info = posts.find { |i| i['id'] == params[:id] }
-
-    puts 'post_info'
-    puts @post_info
   end
 end
