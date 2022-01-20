@@ -1,17 +1,13 @@
 class PostsController < ApplicationController
   def index
-    users = User.all
-    @user_info = users.find { |i| i['id'] == params[:user_id] }
-
-    posts = Post.all
-    # @post_info = posts.find { |i| i['id'] == params[:id] }
+    @user_info = User.find(params[:user_id])
   end
 
   def show
-    users = User.all
-    @user_info = users.find { |i| i['id'] == params[:user_id] }
+    @user_info = User.find(params[:user_id])
 
-    posts = Post.all
-    @post_info = posts.find { |i| i['id'] == params[:id] }
+    @post_info = Post.find(params[:id])
+    print 'post info ==>  '
+    puts @post_info['id']
   end
 end

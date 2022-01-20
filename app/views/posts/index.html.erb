@@ -1,18 +1,18 @@
 <section class='container'> 
     <div class="card d-flex">
         <div class="card-image">
-            <%= image_tag('posts/ball.jpg', width:'100%', height:'100%') %>
+            <%= image_tag("#{@user_info.photo}", width:'100%', height:'100%') %>
         </div>
         <div class="card-body">
-            <h1 class="card-title"> <%= @user_info['username'] %> </h1>
+            <h1 class="card-title"> <%= @user_info['name'] %> </h1>
 
             <p class="card-text">Number of posts: <%= @user_info['number_of_posts'] %> </p>
         </div>
     </div>
 
-    <%= link_to(user_post_path(@user_info['id'], '1')) do %>
+    <a href="/users/<%= @user_info.id %>/posts/<%=@post.id%>">
         <div class='post-comment-wrapper'>
-           <div class='post-wrapper'>
+            <div class='post-wrapper'>
                 <div class='post-div'>
                     <h4>Post #1 </h4>
                     <p>
@@ -23,13 +23,17 @@
                     </p>
                 </div>
             </div>
-                <div class='comment-wrapper'>
+            <div class='comment-wrapper'>
                 <p> Username: Comment 1 </p>
                 <p> Username: Comment 2 </p>
                 <p> Username: Comment 3 </p>
                 <p> Username: Comment 4 </p>
             </div>
         </div>
+    </a>
+
+    <%= link_to(user_post_path(@user_info['id'],  @post_info['id'])) do %>
+      
     <% end %>
 
     <div class='post-comment-wrapper'>

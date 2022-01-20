@@ -3,11 +3,11 @@ class Post < ApplicationRecord
   has_many :likes, through: :posts
   has_many :comments, through: :posts
 
-  def most_recent_comments
+  def recent_comments
     comments.last(5)
   end
 
-  def increment_posts_counter
+  def posts_counter
     user.posts_counter += 1
   end
 end
