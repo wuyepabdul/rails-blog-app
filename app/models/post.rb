@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
-  belongs_to :user, optional: true 
-  has_many :likes, through: :posts
-  has_many :comments, through: :posts
+  belongs_to :user, optional: true
+  has_many :likes
+  has_many :comments
 
   def recent_comments
     comments.last(5)
