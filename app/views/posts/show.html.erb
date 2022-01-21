@@ -1,2 +1,18 @@
-<h1>Posts</h1>
-<p>Here is a post that was created</p>
+<div class='post-comment-wrapper container'>
+    <div class='post-wrapper'>
+        <div class='post-div'>
+            <h4>Post #1 </h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
+            </p>
+            <p class='comments-likes'>
+                <small>Comments:x, Likes:y </small>
+            </p>
+        </div>
+    </div>
+    <div class='comment-wrapper'>
+        <% @post.recent_comments.each do |comment| %>
+        <p> <%= comment['text'] %> </p>
+        <% end %>
+    </div>
+</div>
