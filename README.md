@@ -48,10 +48,12 @@ rails s
 ```
 ## Author
 
-👤 **Ntazama Willy**
+👤 **Abdul Wuyep**
 
-- GitHub: [@ntzwilly](https://github.com/ntzwilly)
-- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7aa)
+- GitHub: [@wuyepabdul](https://github.com/wuyepabdul)
+- Twitter: [@AbdulWuyep](https://twitter.com/AbdulWuyep)
+- LinkedIn: [Abdul Wuyep](https://www.linkedin.com/in/abdul-wuyep/)
+
 
 ## 🤝 Contributing
 
