@@ -1,56 +1,39 @@
-# Ruby on Rails blog
+# Rails Blog App
 
-> Blog app - Add forms
+> This project is a blog application built with Ruby on Rails
 
-In this project, I add forms to the Blog app.
+## Built With
+
+- Ruby
+- Ruby on Rails
+
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-
-## Prerequisites
-  - Ruby
-  - Rails
-  - PostgreSQL
-  - rspec-rails
-
-## Setup
-
-- Make sure you have Ruby IRB installed on your computer
-- Clone or download this repo on your machine - https://github.com/wuyepabdul/rails-blog-app
-- Enter project directory - cd rails-blog-app
-## Install
-
-```sh
+```
+git clone https://github.com/wuyepabdul/rails-blog-app
+cd rails-blog-app
 bundle install
-```
-
-### Database
-
-```sh
-# Create user
-sudo -u postgres createuser blog -s
-
-# Create the database
-rake db:create
-
-# Load the schema
-rails db:schema:load
-
-## Apply migration (only if you generate a new migration file)
-rails db:migrate
-```
-### Run
-
-```sh
 rails s
 ```
-## Author
+
+## Tests
+```
+git clone https://github.com/wuyepabdul/rails-blog-app
+cd rails-blog-app
+bundle install
+gem install rspec
+bundle exec rspec
+```
+
+## Authors
+
 
 👤 **Abdul Wuyep**
 
 - GitHub: [@wuyepabdul](https://github.com/wuyepabdul)
 - Twitter: [@AbdulWuyep](https://twitter.com/AbdulWuyep)
 - LinkedIn: [Abdul Wuyep](https://www.linkedin.com/in/abdul-wuyep/)
+
 
 ## 🤝 Contributing
 
@@ -65,3 +48,9 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
+- Inspiration
+- etc
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
