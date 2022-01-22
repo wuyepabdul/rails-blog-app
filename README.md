@@ -2,8 +2,6 @@
 
 > Blog app - Add forms
 
-![form](https://user-images.githubusercontent.com/9049260/150311945-b6963670-fcad-4237-ad82-0db5040dd215.png)
-
 In this project, I add forms to the Blog app.
 ## Getting Started
 
@@ -18,8 +16,8 @@ To get a local copy up and running follow these simple example steps.
 ## Setup
 
 - Make sure you have Ruby IRB installed on your computer
-- Clone or download this repo on your machine
-- Enter project directory
+- Clone or download this repo on your machine - https://github.com/wuyepabdul/rails-blog-app
+- Enter project directory - cd rails-blog-app
 ## Install
 
 ```sh
