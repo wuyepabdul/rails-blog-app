@@ -1,39 +1,57 @@
-# Rails Blog App
+# Ruby on Rails blog
 
-> This project is a blog application built with Ruby on Rails
+> Blog app - Add forms
 
-## Built With
+![form](https://user-images.githubusercontent.com/9049260/150311945-b6963670-fcad-4237-ad82-0db5040dd215.png)
 
-- Ruby
-- Ruby on Rails
-
+In this project, I add forms to the Blog app.
 ## Getting Started
 
-```
-git clone https://github.com/wuyepabdul/rails-blog-app
-cd rails-blog-app
+To get a local copy up and running follow these simple example steps.
+
+## Prerequisites
+  - Ruby
+  - Rails
+  - PostgreSQL
+  - rspec-rails
+
+## Setup
+
+- Make sure you have Ruby IRB installed on your computer
+- Clone or download this repo on your machine
+- Enter project directory
+## Install
+
+```sh
 bundle install
+```
+
+### Database
+
+```sh
+# Create user
+sudo -u postgres createuser blog -s
+
+# Create the database
+rake db:create
+
+# Load the schema
+rails db:schema:load
+
+## Apply migration (only if you generate a new migration file)
+rails db:migrate
+```
+### Run
+
+```sh
 rails s
 ```
+## Author
 
-## Tests
-```
-git clone https://github.com/wuyepabdul/rails-blog-app
-cd rails-blog-app
-bundle install
-gem install rspec
-bundle exec rspec
-```
+👤 **Ntazama Willy**
 
-## Authors
-
-
-👤 **Abdul Wuyep**
-
-- GitHub: [@wuyepabdul](https://github.com/wuyepabdul)
-- Twitter: [@AbdulWuyep](https://twitter.com/AbdulWuyep)
-- LinkedIn: [Abdul Wuyep](https://www.linkedin.com/in/abdul-wuyep/)
-
+- GitHub: [@ntzwilly](https://github.com/ntzwilly)
+- LinkedIn: [@ntazamawilly](https://linkedin.com/in/ntazama-willy-b676b7aa)
 
 ## 🤝 Contributing
 
@@ -48,9 +66,3 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
