@@ -3,6 +3,9 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
 
     @posts = @user.recent_posts
+    
+    print 'posts === '
+    puts @posts
   end
 
   def new

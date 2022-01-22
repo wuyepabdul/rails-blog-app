@@ -6,22 +6,26 @@
         <div class="card-body">
             <h1 class="card-title"> <%= @user['name'] %> </h1>
 
-            <p class="card-text">Number of posts: <%= @user['number_of_posts'] %> </p>
+            <p class="card-text">Number of posts: <%= @user['posts_counter'] %> </p>
         </div>
     </div>
 
     <% @posts.each do |post| %>
-        <%= link_to(user_post_path(@user['id'], post['id'])) do %>
-            <div class='post-comment-wrapper'>
+       
+              <div class='post-comment-wrapper'>
                 <div class='post-wrapper'>
                     <div class='post-div'>
-                            <h4>Post #1 </h4>
+                            <h4> <%= post['title'] %> </h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid iure possimus aut, soluta tenetur reiciendis placeat eos sunt totam consequuntur labore quas atque ipsa rem repellendus...
+                                <%= post['text'] %>...
                             </p>
+                            
                             <p class='comments-likes'>
                                 <small>Comments:x, Likes:y </small>
                             </p>
+                            <%= link_to(user_post_path(@user['id'], post['id'])) do %>
+                                 <button> VIEW POST</button>
+                            <% end %>
                     </div>
                 </div>
                 <div class='comment-wrapper'>
@@ -30,7 +34,6 @@
                     <% end %>
                 </div>
             </div>
-        <% end %>
     <% end %>
 
    
