@@ -8,7 +8,7 @@ class LikesController < ApplicationController
         if like.save
           flash.now[:notice] = 'Liked'
         else
-          flash.now[:alert] = "Could not like post"
+          flash.now[:alert] = 'Could not like post'
         end
       end
     end
